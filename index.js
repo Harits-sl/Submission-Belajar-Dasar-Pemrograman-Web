@@ -22,7 +22,7 @@ const addCardBestSeller = () => {
     {
       imageUrl: "assets/motasuren.jpg",
       name: "Mota Suren",
-      description: "Perpaduan antara kopi, susu dan gula aren",
+      description: "Perpaduan kopi, susu dan gula aren",
       price: "15k",
     },
     {
@@ -34,7 +34,7 @@ const addCardBestSeller = () => {
     {
       imageUrl: "assets/coklat.jpg",
       name: "Choco Hazelnut",
-      description: "Bubuk coklat premium dengan sirup Hazelnut",
+      description: "Coklat premium dengan sirup Hazelnut",
       price: "20k",
     },
   ];
