@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0c0f14;
+  color: #ffffff;
+}
+
+/* . */
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 1.8rem;
+}
+
+.text-primary {
+  color: #ffffff;
+}
+
+.text-secondary {
+  color: #aeaeae;
+}
+
+.text-yellow {
+  color: #dbfe87;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 1.2rem;
+}
+
+.fs-3 {
+  font-size: 1.5rem;
+}
+
+.fs-4 {
+  font-size: 1.8rem;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-black {
+  background-color: #141921;
+}
+/* . */
+
+/* NAVBAR */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+#navbarNav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-item > a {
+  color: #aeaeae;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+.nav-item.active > a {
+  color: #ffffff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+/* LANDING PAGE */
+.enjoy-your-day {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.enjoy-title {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.enjoy-text {
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.enjoy-button {
+  padding: 8px 30px;
+  background-color: #dbfe87;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.image-enjoy {
+  flex: 1;
+}
+
+.container-enjoy {
+  flex: 1;
+}
+
+/* BEST SELLER */
+.best-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.best-text {
+  margin-top: 1rem;
+}
+
+.row-best-seller {
+  display: flex;
+  margin-top: 16px;
+}
+
+.col-best-seller {
+  flex: 1;
+}
+
+.card {
+  height: 28rem;
+  padding: 20px;
+  background-color: #141921;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  border-radius: 16px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-body {
+  margin-top: 1rem;
+}
+
+/* WRAP ASIDE */
+.wrap-with-aside {
+  display: flex;
+}
+
+#content {
+  flex: 2;
+}
+
+#info {
+  flex: 1;
+}
+
+/* ABOUT */
+.row-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-about {
+  flex: 1;
+}
+
+.image-about {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* INFO */
+.image-info {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 20px;
+}
+
+.location {
+  display: flex;
+}
+
+/* footer */
+footer {
+  height: 40px;
+  background-color: #141921;
+  display: flex;
+  justify-content: center;
+}
+
+footer > p {
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .wrap {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrap {
+    max-width: 900px;
+  }
+}
+
+/* handphone */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .hamburger #closeHam {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: #141921;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+  }
+
+  .wrap {
+    max-width: 540px;
+  }
+
+  .enjoy-your-day {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .enjoy-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .wrap-with-aside {
+    flex-direction: column;
+  }
+
+  .row-best-seller {
+    flex-direction: column;
+  }
+  .card {
+    height: 10rem;
+    flex-direction: column;
+    margin: 8px 40px;
+  }
+
+  .card-img {
+    max-height: 20rem;
+  }
+
+  .best-seller {
+    margin: 0 20px;
+  }
+
+  .about {
+    margin: 0 20px;
+  }
+
+  .row-about {
+    flex-direction: column;
+  }
+
+  .image-about {
+    margin-top: 16px;
+  }
+
+  .info {
+    margin: 16px 20px 0 20px;
+  }
+}
